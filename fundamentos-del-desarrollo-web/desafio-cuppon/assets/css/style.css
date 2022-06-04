@@ -1,0 +1,39 @@
+/*Se importa las fuentes Roboto 300 y 500 de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto Medium 500';
+    font-size: 1.3rem;
+}
+
+
+
+
+/*Selecciona la segunda etiqueta <a> hija de los elemento con la clase .card-body*/
+.card-body a:nth-child(2) {
+    font-size: 1.3rem;
+}
+
+/*Selecciona solo las etiquetas h5 hijas de los elementos con la clase .card-body*/
+.card-body h5 {
+    font-family: 'Roboto Light 300';
+    font-size: 1.4rem;
+    color: #212529;
+}
+
+/*Selecciona solo las etiquetas p hijas de los elementos con la clase .card-body*/
+.card-body p {
+    color: #707070;
+}
+
+.card-body i {
+    color: #707070;
+}
+
+.card-body .list-group-item {
+    background-color: aqua;
+}
