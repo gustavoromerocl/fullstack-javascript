@@ -1,0 +1,17 @@
+.hero-image {
+  height: 70vh;
+}
+
+.hero-image img{
+  width: 100%;
+  height: 100%;
+}
+
+.hero-form {
+  position: absolute;
+  top: 0;
+}
+
+.card {
+  border: none;
+}
