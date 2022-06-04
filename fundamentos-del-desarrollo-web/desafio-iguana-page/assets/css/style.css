@@ -1,0 +1,135 @@
+/*Iguana verde challenge css*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #000000;
+  height: 100%;
+}
+
+h1, h2 , p ,span {
+  color: #ffffff;
+}
+
+p {
+  font: normal normal 300 16px/19px Raleway;
+}
+
+span {
+  font: normal normal 300 25px/30px Raleway;
+}
+
+/*Description section*/
+.iguana-img {
+  background-image: url('../img/bg-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  padding: .8rem 0;
+  font: normal normal medium 50px/59px Raleway;
+}
+
+.sub-titulo {
+  text-align: center;
+  text-transform: uppercase;
+  padding: .8rem 0;
+  font: normal normal medium 40px/47px Raleway;
+}
+
+.desc-section {
+  height: 348px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.iguana-image {
+  width: 399px;
+  height: 237px;
+}
+
+.infografia-text {
+  width: 475px;
+  height: 197px;
+  margin-right: 150px;
+}
+
+/*Icons section*/
+
+.icons-section {
+  background-color: #1e1a13;
+  width: 100%;
+  height: 348px;
+}
+
+.icons-section h2 {
+  padding-top: 75px;
+}
+
+.icons-section ul {
+  display: flex;
+  min-height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons-section li i, .icons-section span {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-section span {
+  padding: .5rem 0;
+}
+
+/* Galeria section */
+.galeria {
+  display: flex;
+  height: 348px;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.container-image{
+  width: 316px;
+  height: 202px;
+}
+
+.container-image img{
+  width: 100%;
+  height: 100%;
+}
+
+/*Footer*/
+
+.footer{
+  height: 102px;
+  background-color: #1e1a13;
+}
+
+.footer p{
+  text-align: center;
+  padding: 39px 0;
+}
+
+
+
+
