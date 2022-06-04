@@ -1,0 +1,181 @@
+/*----------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap');
+/*----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------*/
+/*-----------------ALL-----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*-------------------------------------------*/
+/*-----------------NAV-----------------------*/
+.navbar-brand {
+    font-family: 'Lobster';
+    font-weight: 400;
+    font-size: 25pt;
+    /* padding: 0;
+    margin: 0; */
+}
+.navbar-toggler{
+    border: solid #777777;
+}
+.divnavCustom{
+    width: 100%;
+}
+/*-------------------------------------------*/
+/*----------------HEADER---------------------*/
+h1 {
+    font-family: 'Cabin';
+    font-size: 22pt;
+    font-weight: 700;
+}
+header h2 {
+    font-family: 'Cabin';
+    font-weight: 700;
+    font-size: 14pt;
+}
+.buttonCustom{
+    font-family: 'Cabin';
+    font-size: 10pt;
+    color: #373A3C;
+    width: 90pt;
+    height: 30pt;
+    margin: 0;
+    padding: 0;
+    border: solid #DDDDDD;
+}
+
+/*Carousel */
+.carousel-indicators {
+    bottom: 0;
+}
+/*-------------------------------------------*/
+/*-----------------CAROUSEL------------------*/
+/*Se edita selector de paginas, se redonde con vborder radius*/
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    background-color: #373A3C;
+}
+hr {
+    border: 1px solid #000000;
+}
+/*Carousel end*/
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*-----------------ARTICLES------------------*/
+.recetas h2{
+    font-family: 'Cabin';
+    font-weight: 700;
+    font-size: 22pt;
+    color: #373A3C;
+}
+/*-------------------------------------------*/
+/*----------------NEWSLETTER-----------------*/
+.newsletter{
+    background-color: #DC3545;
+    font-family: 'Cabin';
+    color: #FFFFFF;
+    text-align: center;
+}
+.newsletter h3{
+    font-weight: 700;
+}
+.newsletter h5{
+    font-weight: 400;
+}
+.newsletter h4{
+    font-family: 'Lobster';
+    font-weight: 400;
+}
+.newsletter button{
+    width: 200pt;
+    color: #DDDDDD;
+}
+
+/*-------------------------------------------*/
+/*----------------FOOTER---------------------*/
+footer{
+    background-color: #373A3C;
+    font-family: 'Lobster';
+    font-weight: 400;
+    font-size: 37pt;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/*-------------------------------------------*/
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/*--------------------------------MEDIA QUERY MOBILE AND DESKTOP--------------------------------------*/
+/*-------------------------------------------*/
+@media (max-width: 991px){
+    header img{
+        border-top: 0.5px solid #373A3C;
+    }
+    header h1{
+        border-bottom: 0.5px solid #373A3C;
+    }
+    .recetas h2{
+        border-top: 0.5px solid #373A3C;
+    }
+}
+/*-------------------------------------------*/
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    header img{
+        border-top: transparent;
+    }
+    header h1{
+        font-size: 40pt;
+        border-bottom: 0.5px solid #373A3C;
+        margin-top: 1rem;
+    }
+    header h2{
+        font-size: 20pt;
+    }
+    .divbuttonCustom{
+        width: 50%;
+    }
+    .recetas h2{
+        font-size: 40pt;
+        border-top: 0.5px solid #373A3C;
+    }
+    .newsletter h3{
+        font-size: 40pt;
+    }
+    .newsletter h5{
+        font-size: 30pt;
+    }
+    .newsletter h4{
+        font-size: 30pt;
+    }
+    
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+
+
+/* .prueba{
+    font-size: 16pt;
+    margin-bottom: 5rem;
+} */
+
+/* .carousel-indicators li {
+    color: brown !important; por si es requerido
+} */
+
+
+/*
+  .carousel-indicators li, .carousel-indicators li.active {
+    margin: 0px 7px !important;
+  }
+
+*/
