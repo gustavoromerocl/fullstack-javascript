@@ -11,36 +11,51 @@
 </head>
 
 <body>
+  <nav class="fixed bottom-0 sm:top-0 w-screen sm:w-16 h-15 sm:h-screen sm:block lg:w-64 p-3 bg-stone-500 text-white font-semibold">
+    <h2 class="font-normal uppercase hidden lg:block">Accesos consultorio</h2>
+    <ul class="sm:mt-9 flex sm:block justify-around">
+      <li>
+        <a href="#" id="inicio" class="flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-5 sm:h-5 mx-auto lg:mx-0 sm:my-3 lg:my-0" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg> 
+          <p class="pl-2 hidden lg:block font-normal">Inicio</p>
+        </a>
+      </li>
+      <li>
+        <a href="#" id="buscar" class="flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-5 sm:h-5 mx-auto lg:mx-0 sm:my-3 lg:my-0" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+          <p class="pl-2 hidden lg:block font-normal">Buscar paciente</p>
+        </a>
+      </li> 
+      <li>
+        <a href="" id="agregar" class="flex">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:h-5 sm:h-5 mx-auto lg:mx-0 sm:my-3 lg:my-0" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z" />
+          </svg>
+          <p class="pl-2 hidden lg:block font-normal">Agregar paciente</p>
+        </a>
 
-  <nav class="fixed h-screen w-16 lg:w-64 p-3 bg-stone-500 text-white font-semibold">
-    <h2 class="font-normal uppercase">Accesos consultorio</h2>
-    <ul class="mt-9">
-      <li>
-        <button id="inicio">Inicio</a>
-      </li>
-      <li>
-        <button id="buscar">Buscar paciente</button>
-      </li>
-      <li>
-        <button id="agregar">Agregar paciente</button>
       </li>
     </ul>
   </nav>
 
-  <div class="pl-16 lg:pl-64 h-screen w-full flex flex-col">
+  <div class="sm:pl-16 lg:pl-64 h-screen w-screen flex flex-col">
 
-    <header class="p-3 bg-stone-400 text-white font-normal text-xl uppercase">
+    <header class="p-3 bg-orange-400 text-white font-normal text-xl uppercase sticky top-0">
       <h1>Administración de pacientes</h1>
     </header>
 
     <div class="flex-grow bg-gray-200">
 
-      <div class="container p-4 px-32" id="main">
+      <div class="container px-6 sm:px-32 py-10 sm:pb-0" id="main">
         <!-- Contenido -->
       </div>
     </div>
 
-    <footer class="p-1 bg-stone-400 text-white">
+    <footer class="hidden sm:block p-1 bg-orange-400 text-white">
       &copy; Gustavo Romero
     </footer>
 
