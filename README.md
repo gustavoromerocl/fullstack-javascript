@@ -42,3 +42,5 @@
 #### POO y ES6
 
 [Desafío creando y modificando objetos](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/desafio-creando-y-modificando-objetos/index.html)
+
+[Desafío lista de animales](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/desafio-lista-de-animales/index.html)
