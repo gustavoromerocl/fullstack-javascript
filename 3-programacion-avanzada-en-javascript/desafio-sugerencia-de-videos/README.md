@@ -1,4 +1,10 @@
-Requerimientos
+# Desafío sugerencia de vídeos
+
+## Autor
+
+- Gustavo Romero
+
+## Requerimientos
 
 1. Implementar el Patrón Módulo mediante IIFE, en donde:
 - Se cree una función privada que reciba la url del video y el id de la etiqueta
@@ -34,6 +40,7 @@ al ser invocado.
 4. Instanciar la clase hija pasando como argumento la URL y el id para cada etiqueta
 iframe, por lo que se deben crear tres instancias, una para música, otra para película
 y otra para serie, con sus respectivas URL.
+
 5. Invocar al método “playMultimedia” para cada instancia creada, mostrando así los
 videos en el documento HTML.
 
