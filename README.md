@@ -43,4 +43,11 @@
 
 [Desafío creando y modificando objetos](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/desafio-creando-y-modificando-objetos/index.html)
 
-[Desafío lista de animales](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/desafio-lista-de-animales/index.html)
+[Desafío Clases en ES6]()
+
+#### Herencia 
+
+[Desafío lista de animales](https://github.com/gustavoromerocl/fullstack-javascript/tree/main/3-programacion-avanzada-en-javascript/desafio-lista-de-animales)
+
+[Desafío sugerencia de vídeos](https://github.com/gustavoromerocl/fullstack-javascript/tree/main/3-programacion-avanzada-en-javascript/desafio-sugerencia-de-videos)
+

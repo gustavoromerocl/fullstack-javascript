@@ -83,7 +83,6 @@ class Reproductor extends Multimedia {
   setInicio(tiempo) {
     let iframe = document.querySelector(`#${this.id}`)
     //Se agrega autoplay y muted mediante params para la ejecución automatica, además de pasarle el tiempo de delay
-    iframe.muted = true;
     iframe.setAttribute('src', `${this.url}?start=${tiempo}&autoplay=1&mute=1`)
   }
 }
@@ -92,20 +91,20 @@ class Reproductor extends Multimedia {
 iframe, por lo que se deben crear tres instancias, una para música, otra para película
 y otra para serie, con sus respectivas URL. */
 
-let frameMusica = new Reproductor("https://www.youtube.com/embed/gKnG2WKtvgc", "musica")
-let framePeliculas = new Reproductor("https://www.youtube.com/embed/w1LlVkkZg1k", "peliculas")
-let frameSeries = new Reproductor("https://www.youtube.com/embed/mpEvxTId_2A", "series")
+let musicFrame = new Reproductor("https://www.youtube.com/embed/gKnG2WKtvgc", "musica")
+let moviesFrame = new Reproductor("https://www.youtube.com/embed/w1LlVkkZg1k", "peliculas")
+let seriesFrame = new Reproductor("https://www.youtube.com/embed/mpEvxTId_2A", "series")
 
 /* 5. Invocar al método “playMultimedia” para cada instancia creada, mostrando así los
 videos en el documento HTML. */
 
-frameMusica.playMultimedia()
-framePeliculas.playMultimedia()
-frameSeries.playMultimedia()
+musicFrame.playMultimedia()
+moviesFrame.playMultimedia()
+seriesFrame.playMultimedia()
 
 /* 6. Utiliza el método “setInicio” para modificar el tiempo de inicio en alguna de las
 instancias creadas. */
 
-frameMusica.setInicio(2)
-framePeliculas.setInicio(4)
-frameSeries.setInicio(6)
+musicFrame.setInicio(2)
+moviesFrame.setInicio(4)
+seriesFrame.setInicio(6)
