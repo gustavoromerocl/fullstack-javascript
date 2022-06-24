@@ -94,12 +94,13 @@ const pintarResultados = (usuario, repos) => {
   </div>
   <div class="col-6 border">
 
-  <h2>Nombre de repositorios: </h2>
+    <h2>Nombre de repositorios: </h2>
     <ul>
     ${repos.map((repo) => `
 
-      <li>${repo.name}</li>
-      
+      <li>
+        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+      </li>
     `)}
     </ul>
   </div>
