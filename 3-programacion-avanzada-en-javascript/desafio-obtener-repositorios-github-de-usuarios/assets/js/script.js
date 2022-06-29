@@ -7,7 +7,7 @@ repositorios a mostrar. Utiliza una URL base con el valor:
 https://api.github.com/users.
 */
 
-const baseURL = 'https://api.github.com/users'
+const baseURL = 'https://api.github.com/users';
 
 const request = async (url) => {
   const response = await fetch(url);
@@ -106,17 +106,4 @@ const pintarResultados = (usuario, repos) => {
   </div>
   `;
 }
-
-
-/* return new Promise( async (resolve, reject) => {
-  const promesas = await Promise.all([
-    getUser(inputUsuario),
-    getRepo(inputUsuario, inputPagina, inputNroRepos)
-  ])
-  console.log(promesas)
-  resolve(promesas)
-})  */
-
-
-  //console.log(await getUser('gustavoromerocl'));
 
