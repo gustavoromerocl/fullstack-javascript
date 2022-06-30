@@ -49,5 +49,13 @@
 
 [Desafío lista de animales](https://github.com/gustavoromerocl/fullstack-javascript/tree/main/3-programacion-avanzada-en-javascript/desafio-lista-de-animales)
 
-[Desafío sugerencia de vídeos](https://github.com/gustavoromerocl/fullstack-javascript/tree/main/3-programacion-avanzada-en-javascript/desafio-sugerencia-de-videos)
+[Desafío sugerencia de vídeos](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/desafio-sugerencia-de-videos/index.html)
+
+#### Callbacks y APIs
+
+[Desafío obtener respositorios github de usuarios](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/desafio-obtener-repositorios-github-de-usuarios/index.html)
+
+#### Examen de módulo
+
+[Prueba animales salvajes](https://gustavoromerocl.github.io/fullstack-javascript/3-programacion-avanzada-en-javascript/prueba-animales-salvajes/index.html)
 
