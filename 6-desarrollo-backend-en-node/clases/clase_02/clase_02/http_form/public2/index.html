@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Crud de Formularios</title>
+</head>
+<body>
+  <h1>Crud de Formularios</h1>
+  <div class="wrap-form">
+    <form action="http://localhost:3000/crear">
+      <h2>crear</h2>
+      <div class="wrap-form__item">
+        <label>Nombre del Fichero</label>
+        <input type="text" name="name">
+      </div>
+      <div class="wrap-form__item">
+        <label>Mensaje del Fichero</label>
+        <textarea name="message"></textarea>
+      </div>
+      <button type="submit">Crear</button>
+    </form>
+  </div>
+  <hr>
+  <div class="wrap-form">
+    <form action="http://localhost:3000/leer">
+      <h2>leer</h2>
+      <div class="wrap-form__item">
+        <label>Nombre del Fichero</label>
+        <input type="text" name="name">
+      </div>
+      <button type="submit">Leer</button>
+    </form>
+  </div>
+  <hr>
+  <div class="wrap-form">
+    <form action="http://localhost:3000/renombrar">
+      <h2>renombrar</h2>
+      <div class="wrap-form__item">
+        <label>Nombre del Fichero</label>
+        <input type="text" name="name">
+      </div>
+      <div class="wrap-form__item">
+        <label>Nuevo Nombre del Fichero</label>
+        <input type="text" name="newName">
+      </div>
+      <button type="submit">renombrar</button>
+    </form>
+  </div>
+  <hr>
+  <div class="wrap-form">
+    <form action="http://localhost:3000/eliminar">
+      <h2>eliminar</h2>
+      <div class="wrap-form__item">
+        <label>Nombre del Fichero</label>
+        <input type="text" name="name">
+      </div>
+      <button type="submit">eliminar</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^4.1.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "uuid": "^8.3.2"
+  },
+  "name": "desafio-citas-medicas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Romero",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

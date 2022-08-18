@@ -1,0 +1,6 @@
+
+  A la fecha: Wed Aug 03 2022 23:13:22 GMT-0400 (hora estándar de Chile)
+  Fue realizada cotización con los siguientes datos:
+  Cantidad de pesos a convertir: 250000 pesos
+  Convertido a bitcoin da un total de:
+  $0.011959276302872666
