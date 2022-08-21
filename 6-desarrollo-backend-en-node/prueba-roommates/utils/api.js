@@ -15,8 +15,14 @@ const fetchUsers = async () => {
   const uuid = uuidv4();
 
   const { first, last } = results[0].name;
-  
-  return {uuid, name: `${first} ${last}` };
+
+  return {
+    uuid,
+    email: results[0].email,
+    nombre: `${first} ${last}`,
+    debe: 0,
+    recibe: 0
+  };
 }
 
-module.exports = {fetchUsers};
+module.exports = { fetchUsers };

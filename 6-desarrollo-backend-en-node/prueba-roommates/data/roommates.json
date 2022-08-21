@@ -1,12 +1,1 @@
-{
-  "roommates": [
-    {
-      "uuid": "5d3c0774-7e2e-4c93-982f-6aed16968cc2",
-      "name": "Theodore Gilbert"
-    },
-    {
-      "uuid": "9fb5c640-fa99-4eba-a19e-240855072cf9",
-      "name": "Hivrya Stepura"
-    }
-  ]
-}
+{"roommates":[{"uuid":"c22c0f15-1913-4d06-8726-34ac9f1b5d9f","nombre":"Ailin Venås","debe":0,"recibe":18750},{"uuid":"8656d768-5f77-4414-8e5d-39200854ffb0","nombre":"Maureen Reynolds","debe":6250,"recibe":0},{"uuid":"16d2bcb3-13a6-4946-9d3d-5981268dca03","nombre":"Mikola Kashchenko","debe":6250,"recibe":0},{"uuid":"89e5ff8c-a937-4502-b488-62514e0991c5","nombre":"کوروش گلشن","debe":6250,"recibe":0}]}
