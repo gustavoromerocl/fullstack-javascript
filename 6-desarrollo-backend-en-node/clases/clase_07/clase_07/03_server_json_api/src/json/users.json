@@ -1,0 +1,7 @@
+{
+  "users": [
+    { "nombre": "Martina", "apellido": "Tatarchuk", "email": "martina.tatarchuk@example.com", "password": "1002" },
+    { "nombre": "Yatan", "apellido": "Chiplunkar", "email": "yatan.chiplunkar@example.com", "password": "jeannie" },
+    { "nombre": "Stephanie", "apellido": "Jahn", "email": "stephanie.jahn@example.com", "password": "quantum" }
+  ]
+}

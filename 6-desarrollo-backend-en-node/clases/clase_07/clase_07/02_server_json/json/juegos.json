@@ -1,0 +1,6 @@
+{
+  "juegos": [
+    { "nombre": "Halo", "consola": "Xbox" },
+    { "nombre": "Pokemon", "consola": "Nintendo" }
+  ]
+}

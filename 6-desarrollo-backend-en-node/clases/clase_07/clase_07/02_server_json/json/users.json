@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "name": "Raul", "lastname": "Farias", "email": "rfarias@example.com", "password": "qwert" },
+    { "name": "Akira", "lastname": "Farias", "email": "rfarias@example.com", "password": "qwert" },
+    { "name": "Daniela", "lastname": "Farias", "email": "rfarias@example.com", "password": "qwert" },
+    { "name": "Daniela", "lastname": "Sasvedra", "email": "rfarias@example.com", "password": "qwert" }
+  ]
+}
