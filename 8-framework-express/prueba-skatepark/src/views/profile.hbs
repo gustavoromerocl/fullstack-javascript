@@ -1,0 +1,90 @@
+{{> header
+title="Datos del perfil"
+}}
+<div>
+  <button class="btn btn-secondary" onclick="destroySession(event);">Cerrar sesión</button>
+</div>
+<form id="update-profile-form">
+
+  <div class="form-group row w-50 m-auto">
+    <div class="form-group col-12 col-sm-6">
+      <label>Email</label>
+      <input class="form-control m-auto" disabled value={{user.email}} />
+    </div>
+    <div class="form-group col-12 col-sm-6">
+      <label>Nombre</label>
+      <input class="form-control m-auto" value={{user.nombre}} />
+    </div>
+    <div class="form-group col-12 col-sm-6">
+      <label>Password</label>
+      <input type="password" class="form-control m-auto" value={{user.password}} />
+    </div>
+    <div class="form-group col-12 col-sm-6">
+      <label>Repita la password</label>
+      <input type="password" class="form-control m-auto" value={{user.password}} />
+    </div>
+    <div class="form-group col-12 col-sm-6">
+      <label>Años de experiencia</label>
+      <input class="form-control m-auto" value={{user.anos_experiencia}} />
+    </div>
+    <div class="form-group col-12 col-sm-6">
+      <label>Especialidad</label>
+      <input class="form-control m-auto" value={{user.especialidad}} />
+    </div>
+  </div>
+  <div class="mb-1">
+    <button class="btn btn-primary" onclick="updateAccount(event)">Actualizar</button>
+  </div>
+  <div>
+    <button class="btn btn-danger" onclick="destroyAccount(event);">Eliminar cuenta</button>
+  </div>
+</form>
+
+<script>
+  const destroyAccount = async (e) => {
+    e.preventDefault();
+    const data = await fetch('/users', {
+      method: "DELETE",
+      headers: {
+        "Authorization": `${localStorage.getItem('skaters.token')}`
+      }
+    });
+    const result = await data.json();
+    if (result !== 0) return alert('Ha ocurrido un error, por favor intentalo más tarde');
+
+    localStorage.removeItem('skaters.token');
+    window.location.replace('/');
+  }
+
+  const updateAccount = async (e) => {
+    e.preventDefault();
+    const [
+      { value: email },
+      { value: nombre },
+      { value: password },
+      { value: repeatPassword },
+      { value: anos_experiencia },
+      { value: especialidad }
+    ] = document.querySelector('#update-profile-form');
+    payload = { nombre, password, anos_experiencia, especialidad };
+
+    const data = await fetch('/users', {
+      method: "PATCH",
+      headers: {
+        "Authorization": `${localStorage.getItem('skaters.token')}`,
+        "Content-type": "application/json"
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const { jwt } = await data.json();
+
+    if (jwt) {
+      localStorage.setItem('skaters.token', jwt);
+      window.location.pathname.split('?');
+      window.location.replace(`/profile?token=${jwt}`)
+      alert('Usuario actualizado');
+    }
+  }
+
+</script>

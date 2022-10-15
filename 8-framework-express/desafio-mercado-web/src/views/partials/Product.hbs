@@ -1,0 +1,9 @@
+{{#each data}}
+<div class="card" style="width: 18rem; margin: 1rem auto;">
+  <img src="assets/img/{{this.name}}.png" class="card-img-top" alt="{{this.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <a onclick="addToCart(this);" class="btn btn-primary" style="display: block; margin: 0 auto;">Agregar al carro</a>
+  </div>
+</div>
+{{/each}}

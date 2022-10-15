@@ -1,0 +1,51 @@
+{{> header
+title="Administración"
+}}
+
+<table class="table w-50 m-auto">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Años de experiencia</th>
+      <th scope="col">Especialidad</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>
+          <img src="/assets/img/{{this.foto}}">
+        </td>
+        <td>{{this.nombre}}</td>
+        <td>{{this.anos_experiencia}}</td>
+        <td>{{this.especialidad}}</td>
+        <td><input {{#if this.estado}}checked{{/if}}  type="checkbox" onchange="toggleState(event)" /></td>
+      </tr>
+    {{/each}}
+    <div>
+      <button class="btn btn-secondary" onclick="destroySession(event);">Cerrar sesión</button>
+    </div>
+  </tbody>
+</table>
+
+<script>
+
+  const toggleState = async (e) => {
+    const userId = e.target.parentNode.parentNode.firstElementChild.innerHTML
+    const state = e.target.checked;
+
+    const payload = { userId, state }
+    const data = await fetch('/users/state', {
+      method: "PATCH",
+      headers: {
+        "Authorization": `${localStorage.getItem('skaters.token')}`,
+        "Content-type": "application/json"
+      },
+      body: JSON.stringify(payload),
+    });
+  }
+</script>
