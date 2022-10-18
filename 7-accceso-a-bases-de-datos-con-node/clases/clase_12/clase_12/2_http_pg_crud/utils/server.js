@@ -1,0 +1,49 @@
+const http = require('http');
+const fs = require('fs');
+const url = require('url');
+
+const { insertar, leer, actualizar, eliminar } = require('./pg');
+
+const port = 3_000;
+
+const server = http.createServer(async (request, response) => {
+  if (request.url === '/') {
+    const file = fs.readFileSync('public/index.html', 'utf8');
+    response.writeHead(200, { 'Content-Type': 'text/html' });
+    response.end(file);
+  } else if (request.url === '/ejercicios' && request.method === 'POST') {
+    let body = '';
+    request.on('data', (chunk) => (body += chunk));
+    request.on('end', async () => {
+      const data = JSON.parse(body);
+      const result = await insertar(Object.values(data));
+      response.writeHead(result?.code ? 500 : 201, { 'Content-Type': 'application/json' });
+      response.end(JSON.stringify(result));
+    });
+  } else if (request.url === '/ejercicios' && request.method === 'GET') {
+    const result = await leer();
+    response.writeHead(result?.code ? 500 : 200, { 'Content-Type': 'application/json' });
+    response.end(JSON.stringify(result));
+  } else if (request.url === '/ejercicios' && request.method === 'PUT') {
+    let body = '';
+    request.on('data', (chunk) => body += chunk);
+    request.on('end', async () => {
+      const data = JSON.parse(body);
+      const result = await actualizar(Object.values(data));
+      response.writeHead(result?.code ? 500 : 200, { 'Content-Type': 'application/json' });
+      response.end(JSON.stringify(result));
+    });
+  } else if (request.url.startsWith('/ejercicios?nombre=') && request.method === 'DELETE') {
+    const { nombre } = url.parse(request.url, true).query;
+    const result = await eliminar([nombre]);
+    response.writeHead(result?.code ? 500 : 200, { 'Content-Type': 'application/json' });
+    response.end(JSON.stringify(result));
+  } else {
+    response.writeHead(200, { 'Content-Type': 'application/json' });
+    response.end(JSON.stringify({ code: 404, message: 'Page not Found !!!' }));
+  }
+});
+
+server.listen(port);
+
+module.exports = { server };

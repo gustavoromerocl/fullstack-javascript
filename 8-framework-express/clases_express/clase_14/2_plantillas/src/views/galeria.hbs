@@ -1,0 +1,31 @@
+{{>menu galeria='galeria'}}
+
+{{usuarios}}
+
+{{#if usuarios}}
+
+  <ul>
+    {{#each usuarios}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+{{/if}}
+
+<p>Soy la galeria</p>
+
+
+
+
+{{#if nombre}}
+  <p>si tiene nombre</p>
+{{else}}
+  <p>No tiene nombre</p>
+{{/if}}
+
+
+{{#unless nombre}}
+  <p>soy el unless y no esta el nombre</p>
+{{/unless}}
+
+
